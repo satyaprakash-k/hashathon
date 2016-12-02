@@ -8,7 +8,7 @@
             "color" : "white",
             "fabric" : "cotton",
             "pattern" : "solid",
-            "Occassion" : "Casual"
+            "occassion" : "Casual"
         },
         {
             "imageUrl": "img/football/shocks1.jpg",
@@ -18,7 +18,7 @@
             "color" : "white",
             "fabric" : "cotton",
             "pattern" : "solid",
-            "Occassion" : "Casual"
+            "occassion" : "Casual"
         },
         {
             "imageUrl": "img/football/shocks1.jpg",
@@ -28,7 +28,7 @@
             "color" : "white",
             "fabric" : "cotton",
             "pattern" : "solid",
-            "Occassion" : "Casual"
+            "occassion" : "Casual"
         },
         {
             "imageUrl": "img/football/shocks1.jpg",
@@ -38,7 +38,7 @@
             "color" : "white",
             "fabric" : "cotton",
             "pattern" : "solid",
-            "Occassion" : "Casual"
+            "occassion" : "Casual"
         }
     ]
 } 

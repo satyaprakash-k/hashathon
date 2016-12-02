@@ -8,7 +8,7 @@
             "color" : "white",
             "fabric" : "cotton",
             "sleeve" : "Half Sleeve",
-            "Fit" : "Regular"
+            "fit" : "Regular"
         },
         {
             "imageUrl": "img/football/shirt2.jpg",
@@ -18,7 +18,7 @@
             "color" : "white",
             "fabric" : "cotton",
             "sleeve" : "Half Sleeve",
-            "Fit" : "Regular"
+            "fit" : "Regular"
         },
         {
             "imageUrl": "img/football/shirt3.jpg",
@@ -28,7 +28,7 @@
             "color" : "white",
             "fabric" : "cotton",
             "sleeve" : "Half Sleeve",
-            "Fit" : "Regular"
+            "fit" : "Regular"
         },
         {
             "imageUrl": "img/football/shirt3.jpg",
@@ -38,7 +38,7 @@
             "color" : "white",
             "fabric" : "cotton",
             "sleeve" : "Half Sleeve",
-            "Fit" : "Regular"
+            "fit" : "Regular"
         }
     ]
 } 
