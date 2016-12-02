@@ -63,9 +63,38 @@
         padding: 12px;
         color: black;
       }
+      .shirtthumb-img {
+        width: 10%;
+      }
+      .price {
+          float: right;
+          font-weight: bolder;
+      }
+      .text {
+        padding-left: 2%;
+        font-size: 18px;
+      }
+      .size-contain {
+        margin-top: 1%;
+      }
       .accordion-div {
         position: relative;
         left: 125px;
+      }
+      .size {
+        display: inline;
+        background: #1e4cd2;
+        height: 17px;
+        border-radius: 9px;
+        width: 17px;
+        padding: 2px;
+      }
+      .detail {
+        color: red;
+        float: right;
+      }
+      .fit {
+        padding-left: 5%;
       }
      .check-button {
         letter-spacing: 0;
