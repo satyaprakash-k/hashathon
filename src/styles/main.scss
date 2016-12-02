@@ -27,7 +27,6 @@
     }
     .details-part {
       box-sizing: content-box;
-      background: #62bcfa;
       height: 760px;
       width: 546px;
       .bottom-part {
@@ -38,11 +37,10 @@
         right: 0;
         bottom: 0;
       }
-      .tittle {
-        text-align: center;
-        font-weight: bolder;
-        font-size: 30px;
-        padding: 20px;
+      .title {
+        text-align: left;
+        font-size: 20px;
+        padding: 12px;
         color: black;
       }
       .accordion-div {
@@ -91,18 +89,6 @@ button.accordion {
 
 button.accordion.active, button.accordion:hover {
     background-color: #ddd;
-}
-
-button.accordion:after {
-    content: '\02795';
-    font-size: 13px;
-    color: #777;
-    float: right;
-    margin-left: 5px;
-}
-
-button.accordion.active:after {
-    content: "\2796";
 }
 
 div.panel {
