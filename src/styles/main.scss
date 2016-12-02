@@ -46,13 +46,54 @@
       }
     }
     .details-part {
-      padding: 0 13px;
       box-sizing: content-box;
       background: #62bcfa;
       height: 760px;
-      width: 520px;
+      width: 546px;
+      .bottom-part {
+        height: 70px;
+        background-color: red;
+        position: absolute;
+        width: 546px;
+        right: 0;
+        bottom: 0;
+      }
+      .tittle {
+        text-align: center;
+        font-weight: bolder;
+        font-size: 30px;
+        padding: 20px;
+        color: black;
+      }
+      .accordion-div {
+        position: relative;
+        left: 125px;
+      }
+     .check-button {
+        letter-spacing: 0;
+        float: right;
+        display: table-cell;
+        color: #051f2e;
+        border: 2px solid #051f2e;
+        background: #ffffff;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+        width: 150px;
+        height: 33px;
+        font-family: ProximaNova-Regular;
+        font-size: 1em;
+        right: 20px;
+        padding: 5px 0px;
+        -webkit-transition: all ease 0.8s;
+        transition: all ease 0.8s;
+        position: relative;
+        top: 20px;
+     }
+       .delivery-date {
+          padding: 26px;
+      }
     }
-
     .shirt-tooltip {
       background-image: url(../img/tooltip.png);
       background-size: 30px auto;
@@ -126,7 +167,6 @@
         color: #fff;
       }
     }
-
   }
 }
 
@@ -143,4 +183,49 @@
         opacity: 1;
         transform: translate(0px, 0px);
     }
+  }
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 56%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #ddd;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+    width: 56%;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+    width: 56%;
 }
