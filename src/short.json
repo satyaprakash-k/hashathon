@@ -1,0 +1,48 @@
+{
+    "short": [
+        {
+            "imageUrl": "img/football/short1.jpg",
+            "name": "Short",
+            "price": "100",
+            "details" : "Made for training, warm-ups, and for wearing before and after matches.
+These sweatpants make you feel warm and comfortable",
+            "color" : "white",
+            "fabric" : "cotton",
+            "pattern" : "solid",
+            "Fit" : "Regular"
+        },
+        {
+            "imageUrl": "img/football/short1.jpg",
+            "name": "Short",
+            "price": "100",
+            "details" : "Made for training, warm-ups, and for wearing before and after matches.
+These sweatpants make you feel warm and comfortable",
+            "color" : "white",
+            "fabric" : "cotton",
+            "pattern" : "solid",
+            "Fit" : "Regular"
+        },
+        {
+            "imageUrl": "img/football/short1.jpg",
+            "name": "Short",
+            "price": "100",
+            "details" : "Made for training, warm-ups, and for wearing before and after matches.
+These sweatpants make you feel warm and comfortable",
+            "color" : "white",
+            "fabric" : "cotton",
+            "pattern" : "solid",
+            "Fit" : "Regular"
+        },
+        {
+            "imageUrl": "img/football/short1.jpg",
+            "name": "Short",
+            "price": "100",
+            "details" : "Made for training, warm-ups, and for wearing before and after matches.
+These sweatpants make you feel warm and comfortable",
+            "color" : "white",
+            "fabric" : "cotton",
+            "pattern" : "solid",
+            "Fit" : "Regular"
+        }
+    ]
+} 

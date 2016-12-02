@@ -3,7 +3,7 @@ $( document ).ready(function(){
   //get shirt.json
   function getShirtAttire() {
     return $.getJSON("./shirt.json").then(function (data) {
-        return data.attire;
+        return data.shirt;
     });
   }
 
