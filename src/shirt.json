@@ -1,0 +1,28 @@
+{
+    "attire": [
+        {
+            "imageUrl": "img/football/shirt1.jpg",
+            "name": "Shirt1",
+            "price": "100",
+            "details" : "A shirt is a cloth garment for the upper body. Originally an undergarment worn exclusively by men and women it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments."
+        },
+        {
+            "imageUrl": "img/football/shirt2.jpg",
+            "name": "Shirt2",
+            "price": "200",
+            "details" : "A shirt is a cloth garment for the upper body. Originally an undergarment worn exclusively by men and women it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments."
+        },
+        {
+            "imageUrl": "img/football/shirt3.jpg",
+            "name": "Shirt3",
+            "price": "400",
+            "details" : "A shirt is a cloth garment for the upper body. Originally an undergarment worn exclusively by men and women it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments."
+        },
+        {
+            "imageUrl": "img/football/shirt3.jpg",
+            "name": "Shirt3",
+            "price": "400",
+            "details" : "A shirt is a cloth garment for the upper body. Originally an undergarment worn exclusively by men and women it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments."
+        }
+    ]
+} 
