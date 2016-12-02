@@ -11,10 +11,47 @@
 
     </div>
     <div class="col-lg-4 details-part zero-padding-margin">
-
+      <div class="tittle">Product Detail</div>
+      <div class="accordion-div">
+        <button class="accordion">Shirt</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+        <button class="accordion">Shorts</button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+        <button class="accordion">Shocks</button>
+        <div class="panel">
+              <p>Lorem ipsum...</p>
+        </div>
+        <button class="accordion">Shoes</button>
+        <div class="panel">
+              <p>Lorem ipsum...</p>
+        </div>
+      </div>
+      <div class="bottom-part row zero-padding-margin">
+        <div class="col-lg-6 delivery-date"><b> Delivery date</b>: 10th Dec</div>
+        <div class="col-lg-6">
+          <div class="check-button">Checkout</div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
+<script type="text/javascript">
+$( document ).ready(function(){ 
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function(){
+          this.classList.toggle("active");
+          this.nextElementSibling.classList.toggle("show");
+    }
+  }
+});
 
+  
+</script>
 </body>
 </html>
