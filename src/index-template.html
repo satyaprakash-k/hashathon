@@ -32,8 +32,29 @@
       <div class="title">Details</div>
       <div class="accordion-div">
         <button class="accordion">
-        <span class="text">Adidas Football T-shirt </span>
-        <span class="price">$75</span>
+          <div>
+            <img src="img/football/set2tshirt1thumb.png" class="shirtthumb-img">
+            <span class="text">Adidas Football T-shirt </span>
+            <span class="price">$75</span>
+          </div>
+           <div class="size-contain">
+            <span>Size :</span>
+           <select>
+            <option value="XL">XL</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+          </select>
+            <span class="fit">Fit : </span>
+             <select>
+                <option value="Regular">Regular</option>
+                <option value="Slim">Slim</option>
+                <option value="Narrow">Narrow</option>
+                <option value="Loose">Loose</option>
+              </select>
+            <span class="detail">Detail</span>
+            <div>Remove X</div>
+          </div>
         </button>
           <div class="panel">
             <p>Lorem ipsum...</p>
@@ -60,19 +81,19 @@
     </div>
   </div>
 </section>
+@@include('./footer.html')
 <script type="text/javascript">
 $( document ).ready(function(){
-  var acc = document.getElementsByClassName("accordion");
+  var acc = $(".detail");
   var i;
   for (i = 0; i < acc.length; i++) {
-      acc[i].onclick = function(){
-          this.classList.toggle("active");
-          this.nextElementSibling.classList.toggle("show");
-    }
-  }
+    console.log(acc[i]);
+    $(acc[i]).click(function() {
+      $(this).toggleClass("active");
+      $(this).parent().parent().next().toggleClass("show")
+    });
+  } 
 });
-
-
 </script>
 </body>
 </html>

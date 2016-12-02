@@ -28,7 +28,8 @@ $( document ).ready(function(){
       }
     };  
   };
-  var acc = document.getElementsByClassName("accordion");
+  var acc = $(".detail");
+  console.log(acc);
   var i;
   for (i = 0; i < acc.length; i++) {
       acc[i].onclick = function(){
