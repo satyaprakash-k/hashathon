@@ -94,6 +94,42 @@
           }
         }
       }
+      .similar-items-container {
+        border: 1px solid rgba(0, 0, 0, 0.35);
+        position: relative;
+        top: -322px;
+        left: 350px;
+        width: 322px;
+        height: 112px;
+        padding: 5px;
+        border-radius: 5px;
+        .triangle {
+          position: absolute;
+          top: 42px;
+          left: -10px;
+          width: 0;
+          height: 0;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          border-right:10px solid #315ee1;
+        }
+        .similar-items {
+          height: 100px;
+          width: 100px;
+          display: -webkit-box;
+          justify-content: space-around;
+          .similar-item-div {
+            margin-right: 5px;
+            height: inherit;
+            width: inherit;
+            border: 1px solid rgba(0, 0, 0, 0.35);
+            img {
+              height: 98px;
+              width: 98px;
+            }
+          }
+        }
+      }
     }
     .details-part {
       box-sizing: content-box;
