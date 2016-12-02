@@ -20,9 +20,14 @@
       height: 760px;
       width:820px;
       padding: 0 185px;
+      background-image: url('../img/default-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+
     }
     .details-part {
-      padding: 0 5%;
+      padding: 0 13px;
+      box-sizing: content-box;
       background: #62bcfa;
       height: 760px;
       width: 520px;
