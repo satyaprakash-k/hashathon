@@ -1,2 +1,32 @@
 @import "variables";
 @import "bootstrap";
+
+.zero-padding-margin {
+  padding:0;
+  margin: 0;
+}
+.landing-page {
+  width: 1366px;
+  .header {
+    height: 76px;
+    background: #6534ff;
+    width: initial;
+  }
+  .attire-container {
+    height: 674px;
+    width: 1366px;
+    .dummy-part {
+      background: #e6af4b;
+      height: 760px;
+      width:820px;
+      padding: 0 185px;
+    }
+    .details-part {
+      padding: 0 5%;
+      background: #62bcfa;
+      height: 760px;
+      width: 520px;
+    }
+
+  }
+}
