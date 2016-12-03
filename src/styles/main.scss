@@ -58,6 +58,7 @@
         top: 250px;
         left: -180px;
         box-sizing: border-box;
+        background-color: #fff;
         .set-header {
           height: 30px;
           background-color: #afbbe0;
@@ -71,13 +72,14 @@
           }
           i.fa-times {
             font-size: 17px;
-            color: #fff;
-            float: right;
-            display: inline-block;
-            -webkit-text-stroke: 0.1em #afbbe0;
-            position: relative;
-            top: 5px;
-            cursor: pointer;
+    color: black;
+    float: right;
+    display: inline-block;
+    -webkit-text-stroke: 0.1em #afbbe0;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+    opacity: .5;
           }
 
         }
@@ -146,6 +148,7 @@
         height: 135px;
         padding: 5px;
         border-radius: 5px;
+        background-color: #fff;
         .triangle {
           position: absolute;
           top: 42px;
