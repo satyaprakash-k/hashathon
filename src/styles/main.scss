@@ -28,6 +28,13 @@
       background-repeat: no-repeat;
       background-size: 500px auto;
       background-position: 160px 10px;
+      .t-shirt {
+        height: 160px;
+        width: 170px;
+        position: relative;
+        left: 130px;
+        top: 136px;
+      }
 
       i.fa-chevron-up{
         position: absolute;
@@ -230,8 +237,8 @@
       .remove-wedgit {
         font-size: 12px;
         position: relative;
-        left: 273px;
-        top: -66px;
+        left: 440px;
+        top: -77px;
        }
       .fit {
         padding-left: 5%;
@@ -383,11 +390,13 @@
   }
 
 button.accordion {
-    background-color: #eee;
+    position: relative;
+    left: -90px;
+    background-color: #f3f4fd;
     color: #444;
     cursor: pointer;
-    padding: 18px;
-    width: 56%;
+    padding: 18px 25px 18px 25px;
+    width: 480px;
     border: none;
     text-align: left;
     outline: none;

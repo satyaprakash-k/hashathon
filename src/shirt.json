@@ -2,43 +2,47 @@
     "shirt": [
         {
             "imageUrl": "img/football/set1tshirt1thumb.png",
-            "name": "Shirt1",
-            "price": "100",
+            "name": "Adidas Football T-shirt",
+            "price": "$100",
             "details" : "A shirt is a cloth garment for the upper body. Originally an undergarment worn exclusively by men and women it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments.",
             "color" : "white",
             "fabric" : "cotton",
             "sleeve" : "Half Sleeve",
-            "fit" : "Regular"
+            "fit" : "Regular",
+            "imageRef": "img/football/set1sock1.png"
         },
         {
             "imageUrl": "img/football/set2tshirt1thumb.png",
-            "name": "Shirt2",
-            "price": "200",
+            "name": "Nike Football T-shirt",
+            "price": "$200",
             "details" : "A shirt is a cloth garment for the upper body. Originally an undergarment worn exclusively by men and women it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments.",
             "color" : "white",
             "fabric" : "cotton",
             "sleeve" : "Half Sleeve",
-            "fit" : "Regular"
+            "fit" : "Regular",
+            "imageRef": "img/football/set2sock1.png"
         },
         {
             "imageUrl": "img/football/set3tshirt1thumb.png",
-            "name": "Shirt3",
-            "price": "400",
+            "name": "Reebok Football T-shirt",
+            "price": "$300",
             "details" : "A shirt is a cloth garment for the upper body. Originally an undergarment worn exclusively by men and women it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments.",
             "color" : "white",
             "fabric" : "cotton",
             "sleeve" : "Half Sleeve",
-            "fit" : "Regular"
+            "fit" : "Regular",
+            "imageRef": "img/football/set3sock1.png"
         },
         {
             "imageUrl": "img/football/set4tshirt1thumb.png",
-            "name": "Shirt3",
-            "price": "400",
+            "name": "Puma Football T-shirt",
+            "price": "$400",
             "details" : "A shirt is a cloth garment for the upper body. Originally an undergarment worn exclusively by men and women it has become, in American English, a catch-all term for a broad variety of upper-body garments and undergarments.",
             "color" : "white",
             "fabric" : "cotton",
             "sleeve" : "Half Sleeve",
-            "fit" : "Regular"
+            "fit" : "Regular",
+            "imageRef": "img/football/set4sock1.png"
         }
     ]
 } 

@@ -7,7 +7,6 @@
 <section class="container-fluid landing-page zero-padding-margin">
   <div class="row header zero-padding-margin"></div>
   <div class="row attire-container zero-padding-margin">
-
     <div class="col-lg-8 dummy-part zero-padding-margin">
       <div class="more-sets-class" id="more-sets-id">
         <div class="set-header">
@@ -30,8 +29,98 @@
       <div class="accordion-div">
         <button class="accordion">
           <div>
-            <img src="img/football/set2tshirt1thumb.png" class="shirtthumb-img">
-            <span class="text">Adidas Football T-shirt </span>
+            <img src="img/football/set2tshirt1thumb.png" class="shirtthumb-img shirt-img">
+            <span class="shirt-text text">Adidas Football T-shirt</span>
+            <span class="shirt-panel price">$75</span>
+          </div>
+           <div class="size-contain">
+            <span>Size :</span>
+           <select>
+            <option value="XL">XL</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+          </select>
+            <span class="fit">Fit : </span>
+             <select>
+                <option value="Regular">Regular</option>
+                <option value="Slim">Slim</option>
+                <option value="Narrow">Narrow</option>
+                <option value="Loose">Loose</option>
+              </select>
+            <span class="detail">Detail</span>
+            <div class="remove-wedgit">X</div>
+          </div>
+        </button>
+          <div class="panel shirt-panel">
+            <p>Lorem ipsum...</p>
+          </div>
+      </div>
+      <div class="accordion-div">
+        <button class="accordion">
+          <div>
+            <img src="img/football/set1trunk1thumb.png" class="shirtthumb-img">
+            <span class="text">Adidas Football Shorts</span>
+            <span class="price">$75</span>
+          </div>
+           <div class="size-contain">
+            <span>Size :</span>
+           <select>
+            <option value="XL">XL</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+          </select>
+            <span class="fit">Fit : </span>
+             <select>
+                <option value="Regular">Regular</option>
+                <option value="Slim">Slim</option>
+                <option value="Narrow">Narrow</option>
+                <option value="Loose">Loose</option>
+              </select>
+            <span class="detail">Detail</span>
+            <div class="remove-wedgit">X</div>
+          </div>
+        </button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+      </div>
+      <div class="accordion-div">
+        <button class="accordion">
+          <div>
+            <img src="img/football/set1sock1thumb.png" class="shirtthumb-img">
+            <span class="text">Adidas Football Shocks</span>
+            <span class="price">$50</span>
+          </div>
+           <div class="size-contain">
+            <span>Size :</span>
+           <select>
+            <option value="XL">XL</option>
+            <option value="L">L</option>
+            <option value="M">M</option>
+            <option value="S">S</option>
+          </select>
+            <span class="fit">Fit : </span>
+             <select>
+                <option value="Regular">Regular</option>
+                <option value="Slim">Slim</option>
+                <option value="Narrow">Narrow</option>
+                <option value="Loose">Loose</option>
+              </select>
+            <span class="detail">Detail</span>
+            <div class="remove-wedgit">X</div>
+          </div>
+        </button>
+          <div class="panel">
+            <p>Lorem ipsum...</p>
+          </div>
+      </div>
+      <div class="accordion-div">
+        <button class="accordion">
+          <div>
+            <img src="img/football/set1shoe1thumb.png" class="shirtthumb-img">
+            <span class="text">Nike Shoes</span>
             <span class="price">$75</span>
           </div>
            <div class="size-contain">
@@ -60,7 +149,7 @@
       <div class="delivery"> Standard Delivery in 11 - 17 day(s) <span class="free">Free</span></div>
       <div class="cashOnDelivery">560068 | Cash on Delivery also available in your location</div>
       <div class="bottom-part row zero-padding-margin">
-        <div class="col-lg-6 delivery-date"><b>Total : </b><span>$400</span></div>
+        <div class="col-lg-6 delivery-date"><b>Total : </b><span>$275</span></div>
         <div class="col-lg-6">
           <div class="check-button" id="check-id">Checkout</div>
         </div>
@@ -94,7 +183,6 @@ $( document ).ready(function(){
 
    var a = $(".set-box img").attr('id');
    console.log(a);
-
   // $(".set-box-container .set-box img").click(function(){
   //    console.log(this)
   //   $(this).attr('id');
@@ -105,7 +193,6 @@ $( document ).ready(function(){
         return data.set;
     });
   }
-
   //populate item of set
   getSetAttire().done(function (items) {
       if(items.length > 0){
@@ -125,12 +212,12 @@ $(".requirement-box").click(function(){
   $("#set1").click(function(){
    changeSet(2);
  });
- $("#set2").click(function(){
-  changeSet(3);
-});
-$("#set3").click(function(){
- changeSet(4);
-});
+   $("#set2").click(function(){
+    changeSet(3);
+  });
+  $("#set3").click(function(){
+   changeSet(4);
+  });
  });
   function changeSet(setNumber){
     console.log(setNumber)
@@ -138,8 +225,6 @@ $("#set3").click(function(){
     var bgImage = "background-image: url('/img/default-bg.png'),, url('/img/football/set" + setNumber + "sock" + setNumber +".png'),url('/img/football/set" + setNumber + "shoe" + setNumber + ".png'), url('/img/football/set" + setNumber + "trunk" + setNumber + ".png'), url('/img/football/set" + setNumber + "tshirt" + setNumber + ".png') ";
     console.log(bgImage);
       $(".dummy-part").css("background-image", "url('/img/football/set" + setNumber + "sock1.png'),url('/img/football/set" + setNumber + "shoe1.png'), url('/img/football/set" + setNumber + "trunk1.png'), url('/img/football/set" + setNumber + "tshirt1.png'),url('/img/default-bg.png')");
-
-
   };
   $(".requirement-box").click(function(){
   $("#1").click(function(){
@@ -152,18 +237,17 @@ $("#set3").click(function(){
       $(".dummy-part").css("background-image", "url('/img/football/set1sock1.png'),url('/img/football/set1shoe1.png'), url('/img/football/set1trunk1.png'), url('/img/football/set4tshirt1.png'),url('/img/default-bg.png')");
   });
 })
-
 //get set.json
   function getShirtAttire() {
     return $.getJSON("./shirt.json").then(function (data) {
         return data.shirt;
     });
   }
-
   //populate item of set
   getShirtAttire().done(function (items) {
       if(items.length > 0){
       populateShirtSection(items);
+      getShirtPrice(items);
     }
   });
   //structure html for set section
@@ -173,32 +257,42 @@ $("#set3").click(function(){
       {
         $('.shirt-div').append($("<div class='similar-item-div shirt'><img src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
       }
+    };
+  };
+  $(".requirement-box").click(function(){
+    $(".shirt img").click(function(){
+     var imageUrl = $(this).attr('src');
+     getShirtAttire().done(function (items) {
+        if(items.length > 0){
+        getShirtPrice(items,imageUrl);
+      }
+    });
+   });
+ });
+    function getShirtPrice(AttireArray,imageUrl){
+    var arrayLength = AttireArray.length;
+    for (var i = 0; i < arrayLength; i++) {
+     if(imageUrl==AttireArray[i].imageUrl)
+      {
+        $('.shirt-text').html(AttireArray[i].name);
+       $('.shirt-price').html(AttireArray[i].price);
+       $('.shirt-panel p').html(AttireArray[i].details);
+$('.shirt-img').attr('src',AttireArray[i].imageUrl);
+      }
     };  
   };
-
   //get set.json
   function getShortAttire() {
     return $.getJSON("./shorts.json").then(function (data) {
         return data.shorts;
     });
   }
-
   //populate item of set
   getShortAttire().done(function (items) {
       if(items.length > 0){
       populateShortSection(items);
     }
   });
-  //structure html for set section
-  function populateShortSection(AttireArray){
-    var arrayLength = AttireArray.length;
-    console.log(arrayLength);
-    /*for (var i = 1; i < arrayLength; i++) {
-      {
-        $('.shirt-div').append($("<div class='similar-item-div shirt'><img src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
-      }*/
-    };
-
 $("#more-sets-id").hide();
 $("#requirement-id").click(function(){
     $("#more-sets-id").show();
@@ -209,16 +303,12 @@ $("#left-close").click(function(){
 $(".shirt-tooltip").click(function(){
   $(".similar-items-container").show();
 })
-
 $(".similar-items-container i#right-close").click(function(){
   console.log("right popup closed");
   $(".similar-items-container").hide();
 })
-
 });
-
 //click function
-
 </script>
 </body>
 </html>
