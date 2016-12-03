@@ -12,12 +12,12 @@
       <div class="more-sets-class">
         <div class="set-header">
           <span class="caption">Similar products</span>
-          <i class="fa fa-times close" aria-hidden="true"></i>
+          <i class="fa fa-times close" id = "close-left" aria-hidden="true"></i>
         </div>
         <div class="set-box-container">
         </div>
       </div>
-      <i class="fa fa-chevron-up custom" ></i>
+      <i class="fa fa-chevron-up custom" id = "close-right"></i>
       <div class="requirement-box" id="requirement-id">
         3 more sets
       </div>
@@ -96,7 +96,7 @@ $( document ).ready(function(){
    console.log(a);
 
   $(".set-box-container .set-box img").click(function(){
-     console.log(this)
+     console.log(this);
     $(this).attr('id');
   });
 //get set.json
@@ -147,6 +147,7 @@ $( document ).ready(function(){
   //get set.json
   function getShortAttire() {
     return $.getJSON("./shorts.json").then(function (data) {
+        console.log(data);
         return data.shorts;
     });
   }
@@ -167,7 +168,20 @@ $( document ).ready(function(){
       }*/
     };  
   
+$(".more-sets-class").hide();
 
+$(".requirement-box").click(function(){
+  $(".more-sets-class").show();
+})
+$("#close-left").click(function(){
+  $(".more-sets-class").hide();
+})
+$(".shirt-tooltip").click(function(){
+  $(".similar-items-container").show();
+})
+$("#close-right").click(function(){
+  $(".similar-items-container").hide();
+})
 
 
 });
