@@ -50,7 +50,7 @@
                 <option value="Loose">Loose</option>
               </select>
             <span class="detail">Detail</span>
-            <div>Remove X</div>
+            <div class="remove-wedgit">X</div>
           </div>
         </button>
           <div class="panel">
@@ -62,7 +62,7 @@
       <div class="bottom-part row zero-padding-margin">
         <div class="col-lg-6 delivery-date"><b>Total : </b><span>$400</span></div>
         <div class="col-lg-6">
-          <div class="check-button">Checkout</div>
+          <div class="check-button" id="check-id">Checkout</div>
         </div>
       </div>
     </div>
@@ -90,7 +90,7 @@ $( document ).ready(function(){
       $(this).toggleClass("active");
       $(this).parent().parent().next().toggleClass("show");
     });
-  } 
+  }
 
    var a = $(".set-box img").attr('id');
    console.log(a);

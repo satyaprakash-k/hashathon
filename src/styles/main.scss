@@ -9,8 +9,11 @@
   width: 1366px;
   .header {
     height: 76px;
-    background: #6534ff;
     width: initial;
+    background-image: url("/img/header.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .attire-container {
     height: 760px;
@@ -219,7 +222,14 @@
       .detail {
         color: red;
         float: right;
+        font-size: 12px;
       }
+      .remove-wedgit {
+        font-size: 12px;
+        position: relative;
+        left: 273px;
+        top: -66px;
+       }
       .fit {
         padding-left: 5%;
       }
