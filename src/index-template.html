@@ -22,7 +22,7 @@
         3 more sets
       </div>
       @@include('./similar-items.html')
-      @@include('./shorts.html')
+     <!--  @@include('./shorts.html') -->
     </div>
     <div class="col-lg-4 details-part zero-padding-margin">
       <div class="more-sets-container"></div>
@@ -92,8 +92,9 @@ $( document ).ready(function(){
     });
   } 
 
-   var a = $(".set-box img").attr('id');
-   console.log(a);
+$('.set-box img').click(function(){
+    console.log($(this).attr('id'));
+});
 
   $(".set-box-container .set-box img").click(function(){
      console.log(this);
@@ -145,35 +146,34 @@ $( document ).ready(function(){
   };
 
   //get set.json
-  function getShortAttire() {
+ /* function getShortAttire() {
     return $.getJSON("./shorts.json").then(function (data) {
-        console.log(data);
         return data.shorts;
     });
-  }
+  }*/
 
   //populate item of set
-  getShortAttire().done(function (items) {
+ /* getShortAttire().done(function (items) {
       if(items.length > 0){
       populateShortSection(items);
     }
-  });
+  });*/
   //structure html for set section
-  function populateShortSection(AttireArray){
+/*  function populateShortSection(AttireArray){
     var arrayLength = AttireArray.length;
-    console.log(arrayLength);
+    console.log(arrayLength);*/
     /*for (var i = 1; i < arrayLength; i++) {
       {
         $('.shirt-div').append($("<div class='similar-item-div shirt'><img src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
       }*/
-    };  
+ /*   };  */
   
 $(".more-sets-class").hide();
 
 $(".requirement-box").click(function(){
   $(".more-sets-class").show();
 })
-$("#close-left").click(function(){
+/*$("#close-left").click(function(){
   $(".more-sets-class").hide();
 })
 $(".shirt-tooltip").click(function(){
@@ -181,7 +181,7 @@ $(".shirt-tooltip").click(function(){
 })
 $("#close-right").click(function(){
   $(".similar-items-container").hide();
-})
+})*/
 
 
 });
