@@ -12,14 +12,9 @@
       <div class="more-sets-class">
         <div class="set-header">
           <span class="caption">Similar products</span>
-          <i class="fa fa-times" aria-hidden="true"></i>
+          <i class="fa fa-times close" aria-hidden="true"></i>
         </div>
         <div class="set-box-container">
-          <div class="set-box">
-            <img src="img/football/set1thumb.png">
-          </div>
-          <div class="set-box"></div>
-          <div class="set-box"></div>
         </div>
       </div>
       <i class="fa fa-chevron-up custom" ></i>
@@ -27,6 +22,7 @@
         3 more sets
       </div>
       @@include('./similar-items.html')
+      @@include('./shorts.html')
     </div>
     <div class="col-lg-4 details-part zero-padding-margin">
       <div class="more-sets-container"></div>
@@ -61,8 +57,10 @@
             <p>Lorem ipsum...</p>
           </div>
       </div>
+      <div class="delivery"> Standard Delivery in 11 - 17 day(s) <span class="free">Free</span></div>
+      <div class="cashOnDelivery">560068 | Cash on Delivery also available in your location</div>
       <div class="bottom-part row zero-padding-margin">
-        <div class="col-lg-6 delivery-date"><b> Delivery date</b>: 10th Dec</div>
+        <div class="col-lg-6 delivery-date"><b>Total : </b><span>$400</span></div>
         <div class="col-lg-6">
           <div class="check-button">Checkout</div>
         </div>
@@ -88,13 +86,94 @@ $( document ).ready(function(){
   var acc = $(".detail");
   var i;
   for (i = 0; i < acc.length; i++) {
-    console.log(acc[i]);
     $(acc[i]).click(function() {
       $(this).toggleClass("active");
-      $(this).parent().parent().next().toggleClass("show")
+      $(this).parent().parent().next().toggleClass("show");
     });
   } 
+
+   var a = $(".set-box img").attr('id');
+   console.log(a);
+
+  $(".set-box-container .set-box img").click(function(){
+     console.log(this)
+    $(this).attr('id');
+  });
+//get set.json
+  function getSetAttire() {
+    return $.getJSON("./set.json").then(function (data) {
+        return data.set;
+    });
+  }
+
+  //populate item of set
+  getSetAttire().done(function (items) {
+      if(items.length > 0){
+      populateSetSection(items);
+    }
+  });
+  //structure html for set section
+  function populateSetSection(AttireArray){
+    var arrayLength = AttireArray.length;
+    for (var i = 1; i < arrayLength; i++) {
+      {
+        $('.set-box-container').append($("<div class='set-box'><img src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
+      }
+    };  
+  };
+//get set.json
+  function getShirtAttire() {
+    return $.getJSON("./shirt.json").then(function (data) {
+        return data.shirt;
+    });
+  }
+
+  //populate item of set
+  getShirtAttire().done(function (items) {
+      if(items.length > 0){
+      populateShirtSection(items);
+    }
+  });
+  //structure html for set section
+  function populateShirtSection(AttireArray){
+    var arrayLength = AttireArray.length;
+    for (var i = 1; i < arrayLength; i++) {
+      {
+        $('.shirt-div').append($("<div class='similar-item-div shirt'><img src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
+      }
+    };  
+  };
+
+  //get set.json
+  function getShortAttire() {
+    return $.getJSON("./shorts.json").then(function (data) {
+        return data.shorts;
+    });
+  }
+
+  //populate item of set
+  getShortAttire().done(function (items) {
+      if(items.length > 0){
+      populateShortSection(items);
+    }
+  });
+  //structure html for set section
+  function populateShortSection(AttireArray){
+    var arrayLength = AttireArray.length;
+    console.log(arrayLength);
+    /*for (var i = 1; i < arrayLength; i++) {
+      {
+        $('.shirt-div').append($("<div class='similar-item-div shirt'><img src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
+      }*/
+    };  
+  
+
+
+
 });
+
+//click function
+
 </script>
 </body>
 </html>
