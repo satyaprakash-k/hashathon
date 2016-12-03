@@ -156,6 +156,7 @@
         padding: 5px;
         border-radius: 5px;
         background-color: #fff;
+        z-index:1;
         .triangle {
           position: absolute;
           top: 42px;
@@ -247,9 +248,9 @@
         letter-spacing: 0;
         float: right;
         display: table-cell;
-        color: #051f2e;
-        border: 2px solid #051f2e;
-        background: #ffffff;
+        color: #fff;
+        border: 2px solid #38b441;
+        background: #38b441;
         text-transform: uppercase;
         text-align: center;
         cursor: pointer;
