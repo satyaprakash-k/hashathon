@@ -20,7 +20,8 @@
       height: 760px;
       width: 820px;
       padding: 0 185px;
-      background-image: url(../img/default-bg.png);
+      background-image: url("/img/default-bg.png"), url("/img/football/set1sock1.png"), url("/img/football/set1shoe1.png") , url("/img/football/set1trunk1.png"), url("/img/football/set1tshirt1.png");
+
       background-repeat: no-repeat;
       background-size: 500px auto;
       background-position: 160px 10px;
@@ -133,6 +134,7 @@
         }
       }
       .similar-items-container {
+        background: bisque;
         border: 1px solid rgba(0, 0, 0, 0.35);
         position: relative;
         top: -322px;

@@ -9,15 +9,15 @@
   <div class="row attire-container zero-padding-margin">
 
     <div class="col-lg-8 dummy-part zero-padding-margin">
-      <div class="more-sets-class">
+      <div class="more-sets-class" id="more-sets-id">
         <div class="set-header">
           <span class="caption">Similar products</span>
-          <i class="fa fa-times close" id = "close-left" aria-hidden="true"></i>
+          <i class="fa fa-times close" id="left-close" aria-hidden="true"></i>
         </div>
         <div class="set-box-container">
         </div>
       </div>
-      <i class="fa fa-chevron-up custom" id = "close-right"></i>
+      <i class="fa fa-chevron-up custom" ></i>
       <div class="requirement-box" id="requirement-id">
         3 more sets
       </div>
@@ -92,14 +92,13 @@ $( document ).ready(function(){
     });
   } 
 
-$('.set-box img').click(function(){
-    console.log($(this).attr('id'));
-});
+   var a = $(".set-box img").attr('id');
+   console.log(a);
 
-  $(".set-box-container .set-box img").click(function(){
-     console.log(this);
-    $(this).attr('id');
-  });
+  // $(".set-box-container .set-box img").click(function(){
+  //    console.log(this)
+  //   $(this).attr('id');
+  // });
 //get set.json
   function getSetAttire() {
     return $.getJSON("./set.json").then(function (data) {
@@ -118,10 +117,42 @@ $('.set-box img').click(function(){
     var arrayLength = AttireArray.length;
     for (var i = 1; i < arrayLength; i++) {
       {
-        $('.set-box-container').append($("<div class='set-box'><img src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
+        $('.set-box-container').append($("<div class='set-box' ><img id ='set" + i + "' src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
       }
-    };  
+    };
   };
+$(".requirement-box").click(function(){
+  $("#set1").click(function(){
+   changeSet(2);
+ });
+ $("#set2").click(function(){
+  changeSet(3);
+});
+$("#set3").click(function(){
+ changeSet(4);
+});
+ });
+  function changeSet(setNumber){
+    console.log(setNumber)
+    var setName = "set"+setNumber;
+    var bgImage = "background-image: url('/img/default-bg.png'),, url('/img/football/set" + setNumber + "sock" + setNumber +".png'),url('/img/football/set" + setNumber + "shoe" + setNumber + ".png'), url('/img/football/set" + setNumber + "trunk" + setNumber + ".png'), url('/img/football/set" + setNumber + "tshirt" + setNumber + ".png') ";
+    console.log(bgImage);
+      $(".dummy-part").css("background-image", "url('/img/football/set" + setNumber + "sock1.png'),url('/img/football/set" + setNumber + "shoe1.png'), url('/img/football/set" + setNumber + "trunk1.png'), url('/img/football/set" + setNumber + "tshirt1.png'),url('/img/default-bg.png')");
+
+
+  };
+  $(".requirement-box").click(function(){
+  $("#1").click(function(){
+    $(".dummy-part").css("background-image", "url('/img/football/set1sock1.png'),url('/img/football/set1shoe1.png'), url('/img/football/set1trunk1.png'), url('/img/football/set2tshirt1.png'),url('/img/default-bg.png')");
+  });
+  $("#2").click(function(){
+      $(".dummy-part").css("background-image", "url('/img/football/set1sock1.png'),url('/img/football/set1shoe1.png'), url('/img/football/set1trunk1.png'), url('/img/football/set3tshirt1.png'),url('/img/default-bg.png')");
+  });
+  $("#3").click(function(){
+      $(".dummy-part").css("background-image", "url('/img/football/set1sock1.png'),url('/img/football/set1shoe1.png'), url('/img/football/set1trunk1.png'), url('/img/football/set4tshirt1.png'),url('/img/default-bg.png')");
+  });
+})
+
 //get set.json
   function getShirtAttire() {
     return $.getJSON("./shirt.json").then(function (data) {
@@ -146,43 +177,43 @@ $('.set-box img').click(function(){
   };
 
   //get set.json
- /* function getShortAttire() {
+  function getShortAttire() {
     return $.getJSON("./shorts.json").then(function (data) {
         return data.shorts;
     });
-  }*/
+  }
 
   //populate item of set
- /* getShortAttire().done(function (items) {
+  getShortAttire().done(function (items) {
       if(items.length > 0){
       populateShortSection(items);
     }
-  });*/
+  });
   //structure html for set section
-/*  function populateShortSection(AttireArray){
+  function populateShortSection(AttireArray){
     var arrayLength = AttireArray.length;
-    console.log(arrayLength);*/
+    console.log(arrayLength);
     /*for (var i = 1; i < arrayLength; i++) {
       {
         $('.shirt-div').append($("<div class='similar-item-div shirt'><img src='"+ AttireArray[i].imageUrl +"'alt='"+ name +"'id='"+ i+"'/></div>"));
       }*/
- /*   };  */
-  
-$(".more-sets-class").hide();
+    };
 
-$(".requirement-box").click(function(){
-  $(".more-sets-class").show();
+$("#more-sets-id").hide();
+$("#requirement-id").click(function(){
+    $("#more-sets-id").show();
 })
-/*$("#close-left").click(function(){
-  $(".more-sets-class").hide();
+$("#left-close").click(function(){
+  $("#more-sets-id").hide();
 })
 $(".shirt-tooltip").click(function(){
   $(".similar-items-container").show();
 })
-$("#close-right").click(function(){
-  $(".similar-items-container").hide();
-})*/
 
+$(".similar-items-container i#right-close").click(function(){
+  console.log("right popup closed");
+  $(".similar-items-container").hide();
+})
 
 });
 
